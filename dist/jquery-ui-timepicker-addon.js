@@ -1,6 +1,6 @@
 /*! jQuery Timepicker Addon - v1.5.0 - 2014-09-01
 * http://trentrichardson.com/examples/timepicker
-* Copyright (c) 2014 Trent Richardson; Licensed MIT */
+* Copyright (c) 2015 Trent Richardson; Licensed MIT */
 (function ($) {
 
 	/*
@@ -201,7 +201,7 @@
 			};
 			for (i in overrides) {
 				if (overrides.hasOwnProperty(i)) {
-					fns[i] = opts[i] || null;
+					fns[i] = opts[i] || this._defaults[i] || null;
 				}
 			}
 
